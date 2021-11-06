@@ -1,0 +1,13 @@
+node_dict:
+    node01:
+        params:
+            -type switch -model N9K -name wolfridge1 -mgmt_ip_addr 172.29.207.8 -mgmt_prf_len 21 -gateway_addr 172.29.204.1 -sup1_con_ipaddr 172.29.207.29 -sup1_con_port 2050 -sup2_con_ipaddr NA -sup2_con_port NA -user_name admin -password insieme -device_type sTOR -pdu_list [('172.31.205.91',19)] -pwr_cycle False -clear_console True
+        interfaces:
+            interface2: -name  Po7 -peer_device node02 -peer_interface Po7
+            interface3: -name  Po501 -peer_device node02 -peer_interface Po501
+            interface4: -name  Po502 -peer_device node02 -peer_interface Po502
+            interface5: -name  Po503 -peer_device node02 -peer_interface Po503
+            interface6: -name  Po504 -peer_device node02 -peer_interface Po504
+        modules:
+        config_file:
+

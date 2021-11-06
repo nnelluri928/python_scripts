@@ -1,0 +1,15 @@
+
+hostname {{ hostname }}
+ip name-server {{ dns_server }}
+!
+{% for interface in interfaces %}
+interface {{ interface['name'] }}
+  description {{ interface['description']|upper }}
+  ip address {{ interface['ip'] }} {{ interface['mask'] }}
+  {% if interface['enabled'] -%}
+  no shutdown
+  {%- else -%}
+  shutdown
+  {%- endif -%}
+!
+{% endfor %}
