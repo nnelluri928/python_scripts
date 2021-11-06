@@ -1,0 +1,14 @@
+! Generated Configuration
+interface {{interface}}
+  description Link to {{server}} port {{link}} for {{purpose}}
+  switchport
+  {% if vlan == "trunk" -%}
+  switch mode trunk
+  {%else -%}
+  switch mode access
+  switch access vlan {{vlan}}
+  spanning-tree port type edge
+  {% endif -%}
+  no shutdown
+
+

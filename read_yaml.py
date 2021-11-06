@@ -1,10 +1,11 @@
-import yaml
-import sys
-from pprint import pprint
+#!/usr/bin/env python3
 
-with open(sys.argv[1]) as f:
+import yaml
+
+file_name = "my_devices_dict.yml"
+
+with open(file_name) as f:
   output = yaml.load(f)
 
-
-pprint(output)
-
+print(output)
+print(output['rtr1'])
