@@ -1,9 +1,21 @@
-#!/usr/bin/env python3 
+#!/usr/binpython3
 
 
-nums = [11,30,44,54]
 
 
-for num in nums:
-        sqare = num ** 2
-        print(sqare)
+def highest_score_under(max_num):
+  if max_num <= 0:
+    return 0
+  highest_num = 0
+  for num in range(max_num):
+    sqare = num ** 2
+    if sqare >= max_num:
+      break
+    highest_num = sqare
+  return num,highest_num
+
+
+
+print(highest_score_under(1))
+
+
