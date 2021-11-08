@@ -1,0 +1,19 @@
+students = [
+    {
+      "akki":100,
+      "nagar":200,
+      "nara": 10
+    }
+    {
+      "nick":100,
+      "maira":200,
+      "uttara": 10
+    }
+    {
+      "brayan":100,
+      "jeorge":200,
+      "lipsa": 10
+    }
+  ]
+
+

@@ -1,0 +1,4 @@
+Switch,Interface,Server,Link,Purpose,VLAN
+sbx-n9kv-ao,Ethernet1/13,esxi-01,nic 0,Virtualization Host,trunk
+sbx-n9kv-ao,Ethernet1/14,esxi-01,nic 1,Virtualization Host,trunk
+

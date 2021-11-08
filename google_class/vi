@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+from collections import Counter
+import csv
+
+count = Counter()
+
+with open('zoo.csv','rt') as fin:
+
+  cin = csv.reader(fin)
+  print(cin)
